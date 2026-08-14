@@ -1,28 +1,33 @@
 # 5 Voices — Lead Empowered
 
-A dependency-free static Netlify/GitHub-ready site promoting:
+A standalone, responsive Netlify/GitHub site promoting **5 Voices for Teams** and **5 Voices Leader Academy**.
 
-- 5 Voices for Teams
-- 5 Voices Leader Academy
+## Site structure
 
-## Deploy to Netlify
+- `index.html` — Main 5 Voices landing page
+- `contact.html` — Internal contact/conversation page with a Netlify Form
+- `styles.css` — Responsive styling
+- `script.js` — Lightweight interactions and form confirmation
+- `assets/` — Logo, Nathan Mitchell headshot, hero team image, and program PDFs
 
-1. Create a GitHub repository.
-2. Upload the contents of this folder to the repository.
-3. In Netlify, choose **Add new project → Import an existing project**.
-4. Select the GitHub repository.
-5. Build command: leave blank.
-6. Publish directory: `.`
-7. Deploy.
+## Navigation & CTAs
 
-The included `netlify.toml` already sets the publish directory.
+The site intentionally keeps visitors on this domain. The following calls to action route to the internal `contact.html` page:
 
-## Customize
+- Talk With Nathan
+- Learn More
+- Discuss 5 Voices for Teams
+- Discuss Leader Academy
+- Start the Conversation
 
-- Replace or update `assets/lead-empowered-logo.png` if you want a different logo treatment.
-- Update CTA URLs in `index.html` if you want the new site to point to a specific booking page or application form.
-- The two source PDFs are included in `assets/` as downloadable program overviews.
+The only external link retained is the **Learn more about Lead Empowered** link in Nathan's bio section, as requested. The two program overview PDFs are also available directly from the site.
 
-## Content basis
+## Netlify deployment
 
-The page content was built from the supplied 5 Voices for Teams flyer, 5 Voices Leader Academy PDF, and the two Lead Empowered program pages supplied by the client.
+1. Upload this folder to a GitHub repository, or drag the folder into Netlify.
+2. If using GitHub, connect the repository to Netlify.
+3. Set the publish directory to `.` if Netlify asks.
+4. Netlify Forms will detect the `5-voices-contact` form automatically after deployment.
+5. In Netlify, open **Forms** to view submissions and configure notification emails.
+
+No build step or framework is required.

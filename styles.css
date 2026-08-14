@@ -11,3 +11,43 @@ footer{padding:35px 0;border-top:1px solid var(--line);background:#fff}.footer-w
 @media(max-width:900px){.founder-grid{grid-template-columns:1fr;gap:45px}.founder-photo{max-width:520px}.site-header nav a:not(.nav-cta){display:none}.hero-grid,.program-grid,.founder{background:linear-gradient(135deg,#f5f6f7 0%,#fff 100%)}.founder-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:75px;align-items:center}.founder-photo-wrap{position:relative}.founder-photo-wrap:after{content:"";position:absolute;left:24px;bottom:-24px;width:78%;height:78%;border-radius:24px;background:var(--gold);opacity:.18;z-index:0}.founder-photo{position:relative;z-index:1;width:100%;max-width:470px;display:block;border-radius:24px;box-shadow:var(--shadow)}.founder-copy h2{font-size:clamp(38px,4.5vw,58px);line-height:1.02;letter-spacing:-.045em;margin:0 0 20px}.founder-copy>p:not(.eyebrow){max-width:680px}.founder-copy p{color:#565b60}.founder-copy .lead{margin-bottom:20px}.founder-link{display:inline-block;margin-top:10px;color:var(--ink)}
 .result-grid{grid-template-columns:1fr}.hero{padding-top:70px}.hero-card{min-height:390px}.stats,.steps{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}.testimonial-card{padding:28px}.testimonial-card.testimonial-featured blockquote{font-size:18px}.footer-wrap{flex-direction:column;align-items:flex-start}.footer-wrap p{text-align:left}.card-intro{min-height:0}}
 @media(max-width:520px){.container,.narrow{width:min(100% - 28px,1120px)}.brand img{width:165px}.nav-wrap{min-height:70px}.hero h1{font-size:45px}.voice-orbit{transform:scale(.82)}.hero-card{min-height:350px;padding:15px}.testimonial blockquote{font-size:20px}.section{padding:75px 0}.program-card{padding:28px}.card-top{align-items:flex-start;flex-direction:column}}
+
+
+/* Hero image + internal contact page updates */
+.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:54px}
+.hero-image-wrap{position:relative;min-height:470px;border-radius:30px;overflow:hidden;box-shadow:var(--shadow);background:#17191b}
+.hero-image{display:block;width:100%;height:100%;min-height:470px;object-fit:cover;object-position:center}
+.hero-image-caption{position:absolute;left:22px;right:22px;bottom:20px;padding:13px 18px;border-radius:14px;background:rgba(17,18,20,.82);backdrop-filter:blur(8px);color:#fff;font-weight:800;font-size:14px;text-align:center}
+.contact-hero{padding:95px 0 105px;background:linear-gradient(135deg,#f7f7f5 0%,#fff 55%,#f1f6f9 100%)}
+.contact-hero-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:80px;align-items:start}
+.contact-hero h1{font-size:clamp(42px,5.4vw,70px);line-height:1.02;letter-spacing:-.05em;margin:0 0 25px;max-width:700px}
+.contact-lead{font-size:18px;color:#5d6267;max-width:680px}
+.contact-points{margin-top:40px;display:grid;gap:16px}
+.contact-points>div{padding:20px 22px;border-left:3px solid var(--gold);background:#fff;border-radius:0 16px 16px 0;box-shadow:0 8px 25px rgba(0,0,0,.05)}
+.contact-points strong{display:block;font-size:17px;margin-bottom:5px}
+.contact-points span{display:block;color:#666b70;font-size:14px}
+.contact-card{background:#111214;color:#fff;border-radius:28px;padding:38px;box-shadow:var(--shadow)}
+.contact-card h2{font-size:34px;line-height:1.08;margin:0 0 8px}
+.form-intro{color:#bfc1c4;margin:0 0 25px}
+.contact-card form{display:grid;gap:9px}
+.contact-card label{font-size:13px;font-weight:800;margin-top:8px}
+.contact-card input,.contact-card select,.contact-card textarea{width:100%;border:1px solid #3b3e42;background:#1a1c1f;color:#fff;border-radius:10px;padding:13px 14px;font:inherit;outline:none}
+.contact-card input:focus,.contact-card select:focus,.contact-card textarea:focus{border-color:var(--gold2);box-shadow:0 0 0 3px rgba(194,154,24,.15)}
+.contact-card textarea{resize:vertical;min-height:130px}
+.contact-card select{appearance:auto}
+.contact-card .button{border:0;cursor:pointer;margin-top:14px;width:100%}
+.hidden-field{position:absolute!important;left:-9999px!important;height:0!important;overflow:hidden}
+.form-success{margin-top:20px;padding:24px;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:#1a1c1f}
+.form-success strong{font-size:20px}.form-success p{color:#c6c8ca}.form-success .text-link{color:#fff}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:35px}
+  .hero-image-wrap,.hero-image{min-height:360px}
+  .contact-hero-grid{grid-template-columns:1fr;gap:45px}
+  .site-header nav a{display:none}
+}
+@media(max-width:520px){
+  .hero-image-wrap,.hero-image{min-height:300px}
+  .hero-image-caption{font-size:12px;left:12px;right:12px;bottom:12px}
+  .contact-hero{padding:70px 0 80px}
+  .contact-card{padding:25px}
+}

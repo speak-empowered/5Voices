@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Start a conversation with Nathan Mitchell about 5 Voices for Teams and the 5 Voices Leader Academy.">
+  <title>Contact Nathan | 5 Voices | Lead Empowered</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Lead Empowered home">
+        <img src="assets/lead-empowered-logo.png" alt="Lead Empowered — Unlock Your True Potential">
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#programs">Programs</a>
+        <a href="index.html#teams">For Teams</a>
+        <a href="index.html#academy">Leader Academy</a>
+        <a href="index.html#results">Results</a>
+        <a href="index.html#founder">About Nathan</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container contact-hero-grid">
+        <div>
+          <p class="eyebrow">LET'S START THE CONVERSATION</p>
+          <h1>What could change if your leaders and teams were truly aligned?</h1>
+          <p class="contact-lead">Tell me a little about your organization, your leadership challenges, and what you're hoping to accomplish. We'll use the conversation to determine whether 5 Voices for Teams, the 5 Voices Leader Academy, or another approach is the right fit.</p>
+          <div class="contact-points">
+            <div><strong>5 Voices for Teams</strong><span>For organizations ready to strengthen communication, alignment, trust, and team performance.</span></div>
+            <div><strong>5 Voices Leader Academy</strong><span>For organizations ready to develop leaders who communicate with clarity, influence, and confidence.</span></div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h2>Tell me about your needs.</h2>
+          <p class="form-intro">Complete the form and Nathan will follow up to continue the conversation.</p>
+          <form name="5-voices-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact.html?success=true">
+            <input type="hidden" name="form-name" value="5-voices-contact">
+            <p class="hidden-field"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="company">Company / Organization</label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+
+            <label for="interest">I'm interested in *</label>
+            <select id="interest" name="interest" required>
+              <option value="" selected disabled>Select an option</option>
+              <option>5 Voices for Teams</option>
+              <option>5 Voices Leader Academy</option>
+              <option>Not sure yet — I'd like to talk</option>
+            </select>
+
+            <label for="team-size">Approximate number of leaders / team members</label>
+            <select id="team-size" name="team-size">
+              <option value="">Select an option</option>
+              <option>1–9</option>
+              <option>10–25</option>
+              <option>26–50</option>
+              <option>51–100</option>
+              <option>101+</option>
+            </select>
+
+            <label for="message">What would you like to accomplish?</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about the opportunity, challenge, or goal you're working on."></textarea>
+
+            <button class="button button-gold" type="submit">Start the Conversation</button>
+          </form>
+          <div id="form-success" class="form-success" hidden>
+            <strong>Thanks for reaching out.</strong>
+            <p>Your message has been submitted. Nathan will follow up soon.</p>
+            <a class="text-link" href="index.html">Return to the 5 Voices site →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <img src="assets/lead-empowered-logo.png" alt="Lead Empowered">
+      <p>© 2026 Lead Empowered LLC · Leadership development for empowered leaders and aligned teams.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
